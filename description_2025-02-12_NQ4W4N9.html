@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text">Okay, let's analyze the provided text messages and give some subjective ratings:
+
+<strong>Assumptions:</strong>
+
+•   The context is likely within a chat or social media setting.
+•   The user "Greek (@TheGreekDev)" is the subject.
+
+<strong>Ratings (1-100 scale):</strong>
+
+1.  <strong>Funny/Cute:</strong> 65 - The "i have a very strong mental health" and "ill break my keyboard i swear" have some self-deprecating humor that is probably used for comedic purpose.
+2.  <strong>Mad:</strong> 60 - The phrase "ill break my keyboard i swear" indicates a high level of frustration, but it doesn't necessarily translate to full-blown anger. The caps-locked "BRUHH" shows frustration, too.
+3.  <strong>Racist:</strong> 0 - There is absolutely no indication of racism in any of the messages.
+4.  <strong>Good:</strong> 70 - There is no way to judge good or bad.
+5.  <strong>Angerness:</strong> 60 - The "ill break my keyboard i swear" and BRUHH shows a lot of anger.
+6.  <strong>Sadness:</strong> 30 - There's a hint of underlying sadness with the jokes about mental health, but it's not prominent.
+7.  <strong>Total Overall Score:</strong> 50 - A score based on funny/cute, mad, racist, good, angerness and sadness.
+
+<strong>Disclaimer:</strong>
+
+•   These ratings are entirely subjective and based solely on the limited text provided. It's impossible to make accurate assessments of a person's character or mental state based on a few online messages.
+
+<strong>Additional Notes:</strong>
+
+•   It's important to be mindful of the context and not jump to conclusions about someone based on brief online interactions.
+•   If the messages are part of a larger conversation or a running joke, the ratings might need to be adjusted.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>image0.jpg</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339349186008580198/image0.jpg?ex=67ae65a1&is=67ad1421&hm=05104501adcd082ff775c5aae1dcb44ce5f8a726c6315629a900e28f644cfcbe&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
