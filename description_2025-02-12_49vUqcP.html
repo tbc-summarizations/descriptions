@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text">Here's a breakdown based on the image you provided:
+
+<strong>Ryme:</strong>
+
+1.  <strong>Funny and Cute:</strong> 10/100 (The message is not inherently funny or cute, unless someone finds edgy humor in it)
+2.  <strong>Mad:</strong> 5/100 (There's no overt sign of anger, but the spamming of a word could indicate some level of frustration or strong emotion)
+3.  <strong>Racist:</strong> 90/100 (The repeated use of a racial slur, even if not directed at anyone specific, is highly problematic and considered racist)
+4.  <strong>Good:</strong> 5/100 (Due to the heavy use of a racial slur, the "good" rating is low)
+5.  <strong>Angerness:</strong> 5/100 (Very minimal indication of anger, might just be spamming)
+6.  <strong>Sadness:</strong> 5/100 (There's nothing indicating sadness)
+7.  <strong>Total Overall Score:</strong> 20/100 (This considers all factors but is heavily weighted against the use of a racial slur)
+
+<strong>Important Considerations:</strong>
+
+•   <strong>Context Matters:</strong> The tone and meaning can heavily shift based on the conversation leading up to the message.
+•   <strong>Intent:</strong> It's difficult to determine the user's true intent without additional information.
+
+This analysis is based solely on the content of the image.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>Screenshot_20250211_043605_Discord.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339356818064801873/Screenshot_20250211_043605_Discord.png?ex=67ae6cbd&is=67ad1b3d&hm=51f5ad5a0bc162f7f392dfbb37a34db8c27d4b7be5ad747c3a1f5ea0adf12e4a&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
