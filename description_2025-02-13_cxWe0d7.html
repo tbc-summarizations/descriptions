@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text">Okay, based on the image you provided, here's a summary of Kazakhstan's 2022 performances that can be extracted:
+
+<strong>Summary of Results (Based on Image):</strong>
+
+•   <strong>Win:</strong> Kazakhstan 2-1 Slovakia
+•   <strong>Win:</strong> Kazakhstan 2-1 Belarus
+•   <strong>Loss:</strong> Moldova 1-2 Kazakhstan
+•   <strong>Loss:</strong> Kazakhstan 0-1 Slovakia
+•   <strong>Win:</strong> Kazakhstan 2-0 Azerbaijan
+•   <strong>Loss:</strong> Belarus 1-1 Kazakhstan
+•   <strong>Win:</strong> Uzbekistan 2-0 Kazakhstan
+•   <strong>Win:</strong> United Arab Emirates 2-1 Kazakhstan
+•   <strong>Win:</strong> Kazakhstan 2-0 Azerbaijan
+•   <strong>Draw:</strong> Kazakhstan 0-1 Moldova
+
+<strong>Inference:</strong>
+
+Kazakhstan seems to have had a mixed bag of results in these matches. It seems to have an OK form in that year.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>image.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339634491852980244/image.png?ex=67af6f58&is=67ae1dd8&hm=02d8ad94592f86e33ee902308f58fcb2c13e62c36b0421a743d08875233533e8&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
