@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text"><h1>Jubilant Argentina Versus Heartbroken Netherlands</h1>
+
+This image captures the contrasting emotions following a football match, likely a significant one, as evidenced by the passionate reactions. On the left, Argentine players in their iconic blue and white striped jerseys are seen celebrating victory, jumping, running, and expressing elation with raised arms and animated expressions. In stark contrast, a group of Dutch players dressed in bright orange are clustered together on the right side of the frame, exhibiting profound disappointment. Some are kneeling with their heads in their hands, while others are hunched over, displaying visible signs of defeat. The referee in black uniform stands nearby, observing the scene. The overall composition dramatically portrays the highs and lows of competitive sports, where one team's triumph is inextricably linked to another's heartbreak.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>2022-12-09t222421z_460475559_up1eic91q8j40_rtrmadp_3_soccer-worldcup-nld-arg-report.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339632623848390676/2022-12-09t222421z_460475559_up1eic91q8j40_rtrmadp_3_soccer-worldcup-nld-arg-report.png?ex=67af6d9a&is=67ae1c1a&hm=6ad7f3b5c21be6e0b2aebf9e3a3a587a1165d377c83f56cb618b6581c92d8fcd&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
