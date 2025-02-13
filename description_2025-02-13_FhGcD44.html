@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text"><h1>Fifty Cent To Perform In Atyrau</h1>
+
+The image is a promotional graphic featuring rapper 50 Cent. He is positioned in the center, wearing a white tank top, a silver durag, and silver chains, with his arms crossed and a serious expression. Behind him is a cityscape with two large, modern buildings. Below 50 Cent, text in Russian reads "В Атырау выступит легендарный рэпер 50 Cent," which translates to "Legendary rapper 50 Cent will perform in Atyrau." Above the text is a yellow banner with the word "интересное," which translates to "interesting." The overall design suggests an upcoming concert or performance by 50 Cent in Atyrau.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>IMG_2230.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339629136196403362/IMG_2230.png?ex=67af6a5b&is=67ae18db&hm=ec09354cdb44ca104000742c3c14923eb73f6f79d22423aba52c810e9f0b586d&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
