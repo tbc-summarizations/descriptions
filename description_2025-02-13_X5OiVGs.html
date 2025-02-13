@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text">Okay, here are the title and description of the media file you requested:
+
+<h1>Booms For The Passing</h1>
+
+The video features two people, an adult male wearing a black T-shirt with the text "NO BULL" visible and a black baseball cap and a young boy wearing a light blue T-shirt. The man addresses the camera with a somber expression as he offers condolences for the loss of the viewer's brother. The boy, who initially appears serious, is wearing a headpiece promoting the use of an app, but quickly changes his mood at the same time as the man. As the man gives "five big booms" to honor the brother, both of them flex their arms and loudly proclaim "boom" five times.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>y2mate.com_-_Sorry_to_hear_about_your_brother_that_passed_away_he_gets_FIVE_big_BOOMS_bigjustice_720pHFR.mp4</h2>
+<div><video controls style="max-width: 100%;"><source src="https://cdn.discordapp.com/attachments/844116087074586624/1339638930127060992/y2mate.com_-_Sorry_to_hear_about_your_brother_that_passed_away_he_gets_FIVE_big_BOOMS_bigjustice_720pHFR.mp4?ex=67af737a&is=67ae21fa&hm=a6b30e27f9e40ea7b6dd5507143daf575e65e0110d10c26b8eac584a1d1ffff0&" type="video/mp4">Your browser does not support the video tag.</video></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
