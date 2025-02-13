@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text"><h1>A Message To Israel: Potential Scenarios Of Attacks And Aftermath</h1>
+
+The provided video seems to be an animated propaganda piece that suggests a possible full-scale attack on Israel. It opens with a view of missiles in a silo and continues with visuals of military personnel in a control room. The video showcases potential scenarios where rockets or missiles are launched toward Israel, attacking various targets. It shows scenes of explosions and destruction at sites like Tel Aviv's Ministry of Defense, Haifa Oil Refinery, Ben Gurion Airport, International Bank, Dimona nuclear site, as well as at other unidentified targets. The video also includes animated renderings of people who may be political leaders involved in the conflict. There are Arabic writings on the screen as well as loud chanting in the background that give the impression that these actions are a potential threat from an enemy country.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>high_production_iranian_propganda_animation.mp4</h2>
+<div><video controls style="max-width: 100%;"><source src="https://cdn.discordapp.com/attachments/844116087074586624/1339637431296589856/high_production_iranian_propganda_animation.mp4?ex=67af7214&is=67ae2094&hm=1c809b808daa5ba0192ab9b3e72798d8e30b9c0610c45f0bfe715c2a9c8c3aa4&" type="video/mp4">Your browser does not support the video tag.</video></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
