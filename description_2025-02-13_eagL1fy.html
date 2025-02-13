@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text"><h1>Business Bird In A Suit</h1>
+The image depicts a bird with a yellow head that resembles a tennis ball, wearing a dark blue suit with a white shirt and a red tie. The bird has a stern expression, adding a touch of seriousness to the whimsical composition. The background is blurry, suggesting a shallow depth of field, which focuses the attention on the bird in its formal attire. The overall effect is humorous, as it combines the unexpected pairing of a bird-like creature and formal professional clothing.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>d352503bbad5320bec988d4eec1f8559.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339651317978763336/d352503bbad5320bec988d4eec1f8559.png?ex=67af7f03&is=67ae2d83&hm=1e6076a0bbde3cd63c4fab113bd88409a9e20880b0177c5c1c74d89ee4169920&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
