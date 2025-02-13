@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text">Okay, here's the response:
+
+<h1>Henry Smacks Howemn09 In Game</h1>
+
+[Meme Video Idea]
+
+<strong>Scene:</strong> A person dressed as if they are a soccer player.
+
+<strong>Character:</strong> Playing the role of Howemn09.
+
+<strong>(Video starts)</strong>
+
+Howemn09: "Oh yeah, it's just a game! Totally didn't care about losing 5-0. [Vine Boom sound effect] It's all about the sportsmanship!"
+
+Howemn09: "I mean, who needs shots on goal when you have... the <em>spirit</em> of the game? [Fart Sound Effect] I'm clearly happy with my 2 shots."
+
+Howemn09: "Possession is overrated anyway, so its okay I only had 43 percent. [Screaming sound effect] It's really nice to let the other team play as much as they want.
+
+Howemn09: "Seriously, Kaka and Van de Beek? [bonk sound effect] Never heard of them."
+
+Howemn09: "Honestly, I was trying to let him score, so the game wasnt boring [wet fart sound effect] . It's good to be considerate."
+
+<strong>(Video ends with Howemn09 gritting their teeth and giving a thumbs up.)</strong>
+
+<strong>Sound Effects to Include:</strong>
+•   Vine Boom
+•   Fart sound effect
+•   Screaming sound effect
+•   Bonk sound effect
+•   Wet fart sound effect</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>Screenshot_20250214_001918_FC_Mobile.jpg</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339681586655793293/Screenshot_20250214_001918_FC_Mobile.jpg?ex=67af9b34&is=67ae49b4&hm=e79ffa773500297e35088b1e63284e8c2b19684578d37e4ffd5d9c2e2d463b51&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
