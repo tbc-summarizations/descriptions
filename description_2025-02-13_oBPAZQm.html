@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text">Okay, let's break down how upgrading to a Ryzen 5 5600X with your current system (integrated Intel graphics, 8GB RAM, Core i3-12th gen) would impact performance:
+
+<strong>The Ryzen 5 5600X will be a HUGE improvement to your CPU performance.</strong>
+
+•   <strong>Massive CPU Upgrade:</strong> The Ryzen 5 5600X is significantly faster than an i3-12th gen, and with the intergrated graphics being a big bottleneck, upgrading the CPU is an upgrade you will need.
+
+•   <strong>Gaming Performance:</strong> The i3 would hold the computer back in many games, and the Ryzen 5 5600X would provide a significant upgrade, this upgrade would also allow more games to be played overall.
+
+•   <strong>Multitasking and Productivity:</strong> Multitasking, video editing, coding, or anything that benefits from more cores and processing power will be significantly faster.
+
+• <strong>Better Game Settings:</strong> Depending on what game you play, you may be able to move some of the setting to a more medium setting.
+
+<strong>Bottlenecks Remain:</strong>
+
+•   <strong>Integrated Graphics:</strong> The biggest limitation you will still have is your <em>integrated graphics</em>. Games, even after this upgrade, will likely only run on the lowest settings at reasonable framerates, and some games will still be unplayable. You're <em>desperately</em> going to need a dedicated graphics card to fully realize the CPU's potential.
+
+•   <strong>RAM:</strong> 8GB is becoming borderline insufficient for many modern games and applications. You should <em>strongly consider</em> upgrading to 16GB. This will reduce stuttering, improve loading times, and allow you to run more applications simultaneously.
+
+• <strong>The need for a motherboard:</strong> The current motherboard you have will not be able to handle the Ryzen 5 5600X, you will need to purchase a motherboard that is compatible.
+
+<strong>In summary:</strong> The Ryzen 5 5600X upgrade alone will give you a noticeable boost in general computing tasks and some low-end gaming potential, but the integrated graphics and limited RAM will hold back the overall experience. A dedicated graphics card and RAM upgrade are essential to unlock the full potential of the Ryzen 5 5600X and make your PC a capable gaming and content creation machine.
+
+I'd advise getting a RAM upgrade first and then finding a cheap dedicated graphics card, if the graphics card is expensive.
+
+<strong>Recommendation:</strong>
+
+1.  <strong>Priority:</strong> Purchase and install the new motherboard.
+2.  <strong>High Priority:</strong> Get a used or budget dedicated graphics card. Aim for something like an AMD RX 580, RX 6600, or NVIDIA GTX 1660 Super (or better, if your budget allows).
+3.  <strong>Next:</strong> Upgrade RAM to 16GB (2x8GB kit).
+4.  <strong>Enjoy a dramatically improved PC experience!</strong></div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>image.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339670996189450320/image.png?ex=67af9157&is=67ae3fd7&hm=aee3f775ef9bdd8d10f724b4c13f3d5ab1fff9750ec42bfa0c3335e1b2224475&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
