@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text"><h1>Flags On A Map With Turkish Song</h1>
+
+The attached media file is a short TikTok video by user @muslim.alik571 that displays a map of Turkey and its neighboring countries overlaid with their respective flags. A Turkish song plays in the background as the flags appear to wave on the map. The video features text overlays in Turkish, which translates to: "It's a country far away, Wounded in a trap, Though we get stuck in the trap, that place is in our hearts," followed by: "Death doesn't weigh us down, black soils don't come, saplings don't come hard, there is the blackness of their eyes."</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>c52a04897e9eb477b0d754efa998d6bd.mp4</h2>
+<div><video controls style="max-width: 100%;"><source src="https://cdn.discordapp.com/attachments/844116087074586624/1339639193168642139/c52a04897e9eb477b0d754efa998d6bd.mp4?ex=67af73b8&is=67ae2238&hm=4339c41805c68476b56a8d36534363e4c490596e71c8de960851a1c166d34a75&" type="video/mp4">Your browser does not support the video tag.</video></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
