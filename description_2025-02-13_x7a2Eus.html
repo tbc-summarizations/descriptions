@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text">Okay, based on the image provided, here's a summary of Kazakhstan's 2024 performances based on the image, along with a very general rating:
+
+<strong>Summary of Kazakhstan's Results:</strong>
+
+•   <strong>Losses:</strong>
+•   Lost 5-0 to Greece
+•   Lost 2-1 to Luxembourg
+•   Lost 3-2 to Azerbaijan
+•   Drew 0-0 with Norway
+•   Lost 3-0 to Slovenia
+•   Lost 4-0 to Austria
+•   Won 1-0 against Slovenia
+•   Won 2-0 against Austria
+•   Lost 5-0 to Norway
+
+•   <strong>Wins:</strong>
+•   Won 2-1 against Armenia
+
+<strong>General Assessment:</strong>
+
+•   <strong>Inconsistent:</strong> The results are quite mixed. The team suffered some heavy defeats, which indicates struggles against stronger opposition. However, there are also wins, including a victory over Armenia.
+•   <strong>Defensive Issues:</strong> The large number of goals conceded in some matches (5-0 against Greece and Norway, 4-0 against Austria) suggests defensive vulnerabilities.
+•   <strong>Potential:</strong> The wins demonstrate that the team is capable of competing and achieving positive results.
+
+<strong>Rating:</strong>
+
+Given the blend of heavy losses and occasional wins, a fair rating for Kazakhstan's 2024 performances based solely on this limited data would be <strong>Average to Below Average (5/10)</strong>.
+
+<strong>Important Considerations:</strong>
+
+•   <strong>Context:</strong> This rating is based <em>only</em> on the scores in the provided image. A more comprehensive assessment would need to consider:
+•   The nature of the matches (friendlies, competitive qualifiers, etc.).
+•   The opponents' rankings and form at the time.
+•   Kazakhstan's squad composition and any injuries.
+•   The team's tactical approach.
+•   <strong>Ranking in Group:</strong> The performance in qualifiers affects chances of qualifying for a big competition.
+•   <strong>Improvement Over Time:</strong> A more in-depth evaluation would consider whether the team showed signs of improvement over the course of these matches.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>image.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339634929708957717/image.png?ex=67af6fc0&is=67ae1e40&hm=f630bec1b737edd04bc6cd175983d3fd6c4539c1992bf6aa088e81e257fbed3e&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
