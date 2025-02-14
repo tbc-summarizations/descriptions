@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text"><h1>Sleeping Dude On Shoulder Title</h1>
+
+Freakiness: 2.
+Freaky Recommendation: Watch a horror movie marathon and then try to sleep.
+Looks Meter: 65
+Sexy Meter: 5
+Vulnerability Meter: 70</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>Screenshot_20250214-104929.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339881242547720244/Screenshot_20250214-104929.png?ex=67b05526&is=67af03a6&hm=d2b46606f2f3f821c82fe654b736b64591612f4a96f9907637a0b4163d55c223&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
