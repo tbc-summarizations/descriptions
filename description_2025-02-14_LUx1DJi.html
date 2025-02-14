@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text"><h1>Robloxian Wrecks A Ride</h1>
+
+Berishbaev:
+
+•   Freaky Rating: 35/100. Berishbaev is a standard Roblox character, not intentionally freaky.
+•   Freaky Recommendation: Add some unexpected accessories like a misplaced limb or glowing eyes to up the creepiness.
+•   Looks: 65/100. Clean design, neutral color palette.
+•   Looks Recommendation: Could experiment with more personalized accessories to stand out, such as a hat or custom clothing.
+•   Sexy: 20/100. Not actively trying to be sexy.
+•   Sexy Recommendation: Not applicable, since the avatar is not designed with sexiness in mind.
+•   Vulnerability: 90/100. The character's simple form is easy to target.
+•   Vulnerability Recommendation: Sticking to group activities and less risky areas in-game can improve chances of safety.
+
+Dog Avatar:
+
+•   Freaky Rating: 60/100. A dog with sunglasses is already mildly absurd.
+•   Freaky Recommendation: Adding glitches or unnatural movements could significantly increase the freaky factor.
+•   Looks: 70/100. Unique and somewhat trendy with the sunglasses.
+•   Looks Recommendation: A small hat or unusual collar might enhance the style without detracting from the overall appeal.
+•   Sexy: 30/100. The sunglasses add a bit of "cool" but aren't overtly sexy.
+•   Sexy Recommendation: Maybe a subtle wink animation? Not much to build on here.
+•   Vulnerability: 75/100. Smaller and seemingly defenseless.
+•   Vulnerability Recommendation: Stick close to Berishbaev. Safety in numbers.
+
+OVERALL STATS:
+
+•   Looks Recommendation: Both could benefit from personalized touches without going overboard.
+•   Sexy Recommendation: Focus on style and accessories.
+•   Vulnerability Recommendation: Teamwork is key.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>image.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1339724880559603783/image.png?ex=67b06c46&is=67af1ac6&hm=b5962a51fbebc420d050516a1ba342bf701a55ffbf820eb94de2849c61951f89&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
