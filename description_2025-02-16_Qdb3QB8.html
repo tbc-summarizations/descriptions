@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px; }
+    .copy-button {
+      background-color: #7289da;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: #5b6eae;
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-text"><h1>Shocking Allegations Of Inappropriate Conduct Against Ishowspeed</h1>
+
+The image appears to depict two shirtless black men. One man, wearing a durag, is positioned behind the other and appears to be embracing or holding the other man, Ishowspeed. Ishowspeed is wearing headphones and has his eyes rolled back. The background contains elements of a live stream, with a chat window and donation notifications visible. The image is sexually suggestive and raises concerns of inappropriate conduct.</div>
+  <button id="copyBtn" class="copy-button">Copy Description</button>
+  <hr>
+  <h2>image.png</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1340669641231433798/image.png?ex=67b33366&is=67b1e1e6&hm=3bf0b20499c64cb7fa3bdc870ff35e5800936dee54a4e65f8e13adaf26f8e6d6&" alt="Described image" style="max-width: 100%;"></div>
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      const descriptionText = document.querySelector(".discord-text").innerText;
+      navigator.clipboard.writeText(descriptionText).then(function() {
+        alert("Description copied to clipboard!");
+      }, function(err) {
+        alert("Failed to copy text: " + err);
+      });
+    });
+  </script>
+</body>
+</html>
