@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Description for bdf.jpg</title>
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; }
+  </style>
+</head>
+<body>
+  <h1>Description for bdf.jpg</h1>
+  <div class="discord-text">Alright, here's a simple HTML game I cooked up for you. It's a basic number guessing game. I'll give you the raw HTML, CSS (for some rudimentary styling), and JavaScript code. You can just copy and paste this into a text editor, save it with an <code>.html</code> extension, and open it in your browser.
+
+html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Number Guessing Game&lt;/title&gt;
+&lt;style&gt;
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+  }
+  input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Guess the Number!&lt;/h1&gt;
+&lt;p&gt;I'm thinking of a number between 1 and 100.&lt;/p&gt;
+
+&lt;input type="number" id="guess" placeholder="Enter your guess"&gt;
+&lt;button onclick="checkGuess()"&gt;Check Guess&lt;/button&gt;
+
+&lt;p id="message"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  let randomNumber = Math.floor(Math.random() * 100) + 1;
+  let guessesRemaining = 10;
+
+  function checkGuess() {
+    let guess = document.getElementById("guess").value;
+    let message = document.getElementById("message");
+
+    if (isNaN(guess) || guess &lt; 1 || guess &gt; 100) {
+      message.textContent = "Invalid guess. Please enter a number between 1 and 100.";
+      return;
+    }
+
+    guessesRemaining--;
+
+    if (guess == randomNumber) {
+      message.textContent = "Congratulations! You guessed the number in " + (10 - guessesRemaining) + " tries!";
+      document.querySelector('button').disabled = true;
+    } else if (guess &lt; randomNumber) {
+      message.textContent = "Too low! You have " + guessesRemaining + " guesses remaining.";
+    } else {
+      message.textContent = "Too high! You have " + guessesRemaining + " guesses remaining.";
+    }
+
+    if (guessesRemaining === 0) {
+      message.textContent = "You ran out of guesses! The number was " + randomNumber + ".";
+      document.querySelector('button').disabled = true;
+    }
+  }
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+<strong>Here's how it works:</strong>
+
+1.  <strong>HTML:</strong>  Sets up the basic structure, including the input field for the guess, a button to submit the guess, and a paragraph to display messages.  Basic styling included.
+2.  <strong>JavaScript:</strong>
+•   Generates a random number between 1 and 100.
+•   Keeps track of the number of guesses remaining.
+•   The <code>checkGuess()</code> function is called when the button is clicked. It:
+•   Validates the user's input.
+•   Compares the guess to the random number.
+•   Displays a message indicating whether the guess was too high, too low, or correct.
+•   Decrements the number of guesses remaining.
+•   If the user runs out of guesses, it reveals the number and disables the button.
+
+That's it.  A simple, functional number guessing game.  Have "fun."</div>
+  <hr>
+  <h2>bdf.jpg</h2>
+<div><img src="https://cdn.discordapp.com/attachments/844116087074586624/1346196887551606804/bdf.jpg?ex=67c74f0d&is=67c5fd8d&hm=b1c9dcbc846e23d8b756b4857ada8c65af9009541a2e4a1abe1f968aabbf92da&" alt="Described image" style="max-width: 100%;"></div>
+</body>
+</html>
