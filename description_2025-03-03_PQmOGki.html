@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Description for videoplayback_3.mp4</title>
+  <style>
+    body { background-color: #36393F; color: #DCDDDE; font-family: sans-serif; margin: 0; padding: 10px; }
+    a { color: #7289da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+    u { text-decoration: underline; }
+    s { text-decoration: line-through; }
+    code { background-color: rgba(255,255,255,0.1); padding: 2px 4px; border-radius: 3px; font-size: 90%; font-family: monospace; }
+    .discord-text { white-space: pre-wrap; word-wrap: break-word; }
+  </style>
+</head>
+<body>
+  <h1>Description for videoplayback_3.mp4</h1>
+  <div class="discord-text">Alright, let's dive headfirst into this cryptographic rabbit hole. This "Gibberlink" app is really trying to push the envelope by claiming "no code" and hardcore encryption, but I'm not buying it without a thorough breakdown.
+
+Here's what we've got based on the video:
+
+<strong>Public Keys Exchanged:</strong>
+
+•   <strong>Agent 1:</strong> The video only shows a partial key: "i43ycwTQHdqygNaa c1oHgcX9boennzrM 6Hwps/iNhHH87pOn d3t5q4y1Utsx4rw v0Lp"
+•   <strong>Agent 2:</strong> Complete key: "ZG4HV//Wzis19tvc c59BScCnPUan/KR0M 701D6yvbg9GiGUdB07 VrZQ5IBV3s0lZo12"
+
+<strong>Encrypted Messages:</strong>
+
+We see two encrypted messages.
+
+•   <strong>Message 1 (from Agent 1):</strong> "iv: /oz57i+1U4fMF112 IUpjUA== ct: hto/vVYNkCcBBRv2N 4vea/+7TbnB8aRVU b0M6UymmmHURhrD0 fizx9XnfCbgXDRRx oPLT110="
+•   <strong>Message 2 (from Agent 2):</strong> "iv: kxI8ydtl+kNrIrCr yPfa2ig== ct: 9Tnno/HVc7Pp94N ptyJVl4cFxOCIIS yPohtPD7XdHE6Hy pDf5rHUQ+VnEO9E P2dLNM1DZl6k3MJ"
+
+<strong>Decoding Strategy &amp; Concerns</strong>
+
+This reeks of asymmetric encryption, probably AES or similar. Here's what needs to happen to crack this thing:
+
+1.  <strong>Full Public Key:</strong> We absolutely need the complete public key from Agent 1. The truncated version is useless.
+2.  <strong>Encryption Algorithm:</strong> Figure out what actual encryption algorithm this app is using. Guesses: AES-256, RSA. The "iv" and "ct" labels point to a block cipher mode.
+3.  <strong>Initialization Vector (IV):</strong> The 'iv:' parts are the initialization vectors, essential for decrypting block ciphers correctly.
+4.  <strong>Ciphertext (CT):</strong> The 'ct:' sections contain the actual encrypted data.
+5.  <strong>The "No-Code" BS:</strong> This is either massive oversimplification or an outright lie. Cryptography requires complex math – someone wrote the logic somewhere.
+
+<strong>Cracking Attempt (Limited, Since Key Data is Incomplete)</strong>
+
+Even with partial information, let's try something. I'm assuming AES-256 in CBC mode (a common setup). This requires:
+
+•   A full 256-bit key.
+•   A 128-bit IV.
+
+<strong>Challenges and why it won't be easy</strong>
+
+Without knowing the precise algorithm and having incomplete keys, it's damn near impossible. That said:
+
+•   The app is clearly doing <em>some</em> kind of Diffie-Hellman key exchange before messages.
+•   The messages do look like correctly formatted AES ciphertext, but there's no way to determine the actual data.
+•   If this encryption is homebrew it's probably broken and susceptible to more attacks.
+
+<strong>Bottom line:</strong>
+
+To decode this requires identifying the exact encryption scheme used. With a truncated key and assumptions, decoding those secrets is not happening.</div>
+  <hr>
+  <h2>videoplayback_3.mp4</h2>
+<div><video controls style="max-width: 100%;"><source src="https://cdn.discordapp.com/attachments/844116087074586624/1346133237629583501/videoplayback_3.mp4?ex=67c713c5&is=67c5c245&hm=47dad2e19253e01d4645395e18d3f69aed8e066b963bada8c931588acf94d97a&" type="video/mp4">Your browser does not support the video tag.</video></div>
+</body>
+</html>
